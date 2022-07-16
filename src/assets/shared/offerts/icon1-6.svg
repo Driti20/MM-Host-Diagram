@@ -1,0 +1,6 @@
+<svg id="server-storage" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <ellipse id="Ellipse_879" data-name="Ellipse 879" cx="9" cy="2.5" rx="9" ry="2.5" fill="#0e0024"/>
+  <path id="Path_13135" data-name="Path 13135" d="M9,7.25C4.03,7.25,0,6.243,0,5V8c0,1.243,4.03,2.25,9,2.25S18,9.243,18,8V5C18,6.243,13.97,7.25,9,7.25Z" transform="translate(0 -1.25)" fill="#0e0024"/>
+  <path id="Path_13136" data-name="Path 13136" d="M9,13.25c-4.97,0-9-1.007-9-2.25v3c0,1.243,4.03,2.25,9,2.25s9-1.007,9-2.25V11C18,12.243,13.97,13.25,9,13.25Z" transform="translate(0 -2.75)" fill="#0e0024"/>
+  <path id="Path_13137" data-name="Path 13137" d="M9,19.25c-4.97,0-9-1.007-9-2.25v3c0,1.243,4.03,2.25,9,2.25s9-1.007,9-2.25V17C18,18.243,13.97,19.25,9,19.25Z" transform="translate(0 -4.25)" fill="#0e0024"/>
+</svg>

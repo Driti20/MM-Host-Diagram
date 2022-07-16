@@ -1,0 +1,49 @@
+.Collaborate {
+  background: linear-gradient(
+      rgba($color: #01115d, $alpha: 52%),
+      rgba($color: #000313, $alpha: 52%)
+    ),
+    url(../../../../assets/shared/Footer/Collaborate-background.png);
+  padding: max(30px, 4vw) 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  justify-content: center;
+  .Collaborate-title {
+    width: max(35%,310px);
+    text-align: center;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  .Collaborate-description {
+    width: max(35%,310px);
+    text-align: center;
+    margin: auto;
+  }
+  .Collaborate-buttons{
+      width: fit-content;
+      display: flex;
+      margin:2rem auto;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+      .Collaborate-button1{
+        margin:1rem 2rem;
+        color: #fff;
+        padding: 1rem 2.5rem;
+        background: #4262FF;
+        border-radius: 30px;
+        &:hover {
+            animation: pulse-white 0.8s ease-in-out;
+            -webkit-animation: pulse-white 0.8s ease-in-out;
+          }
+    }
+    .Collaborate-button2{
+        margin:1rem 2rem;
+        color: #fff;
+    }
+  }
+}

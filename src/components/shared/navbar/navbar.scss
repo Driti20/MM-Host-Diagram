@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,900&display=swap");
+.navbar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  padding: 10px 30px;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  @media (max-width: 1220px) {
+    padding: 10px 10px;
+  }
+  @media (max-width: 1750px) {
+    padding: 10px 0px;
+    justify-content: space-between;
+  }
+  
+
+  .nav_sticky {
+    background: #fff;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    box-shadow: rgba(11, 11, 11, 0.2) 0px 2px 5px 0px;
+  }
+  .mobile-nav {
+    display: none;
+  }
+
+  .navbar-logo {
+    margin: 0 max(1%);
+    display: flex;
+    align-items: center;
+    color: #000;
+    * {
+      margin: 5px;
+    }
+    @media (max-width: 1155px) {
+      margin: 0 5px;
+    }
+
+    h6 {
+      font-size: max(21px, 1.4vw);
+      font-family: "Nunito";
+      font-weight: 400;
+      color: #111;
+    }
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    font-family:"Nunito" ;
+    font-size: max(13.5px, 0.9vw);
+    * {
+      display: flex;
+      align-items: center;
+      margin: 10px 5px;
+      @media (max-width: 1155px) {
+        margin:10px 1px;
+      }
+    }
+    @media (max-width: 1155px) {
+      margin: 0;
+    }
+  }
+  .nav-auth {
+    font-size: max(13.5px, 0.9vw);
+    display: flex;
+    align-items: center;
+    margin: 0 max(10px);
+    @media (max-width: 1155px) {
+      margin: 0;
+    }
+
+    * {
+      margin: max(0, 20px);
+      font-family: "Nunito";
+    }
+    .link1 {
+      color: #000;
+    }
+    .link2 {
+      color: #fff;
+      background: #4262ff;
+      padding: max(10px, 0.7vw) clamp(0rem, 2vw,2.5rem);
+      border-radius: max(20px, 1.5vw);
+      overflow: hidden;
+      *{
+        margin: 0;
+      }
+      &:hover {
+        animation: pulse-white 0.8s ease-in-out;
+        -webkit-animation: pulse-white 0.8s ease-in-out;
+      }
+    }
+  }
+}
+
+.logo {
+  content: url("../../../assets/shared/nav/blueLogo.svg");
+  svg{
+    width: 3rem;
+    height: 3rem;
+  }
+}
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+  .nav-link {
+    position: relative;
+    margin: 0 max(2.5px, 0.7vw);
+    font-family: "Nunito";
+    font-size: 1rem;
+    .inner-nav-link {
+      color: #000;
+    }
+    .inner-nav-link svg {
+      transition: 300ms ease-in-out;
+    }
+    &:hover {
+      .nav-megamenu {
+        display: flex;
+      }
+      .inner-nav-link svg {
+        transform: rotate(-180deg);
+        -webkit-transform: rotate(-180deg);
+        color: #4262ff;
+        transition: 300ms ease-in-out;
+      }
+      .megamenu-arrow {
+        display: block;
+      }
+    }
+  }
+  .megamenu-arrow {
+    position: absolute;
+    color: #f3f3f3;
+    font-size: 1.5vw;
+    top: 1.5vw;
+    right: 0.4vw;
+    display: none;
+    border: 1px cadetblue;
+
+    @media (max-width: 1150px) {
+      top: 25px;
+    }
+  }
+}
+@media (max-width: 1020px) {
+  .navbar {
+    padding: 0;
+    .nav-logo,
+    .nav-links,
+    .nav-auth {
+      display: none;
+    }
+    .mobile-nav {
+      display: block;
+    }
+  }
+}
+.nav_sticky {
+  background: #fff;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  box-shadow: rgba(11, 11, 11, 0.2) 0px 2px 5px 0px;
+}

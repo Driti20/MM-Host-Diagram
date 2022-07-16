@@ -1,0 +1,122 @@
+.Offerts{
+    .Offert-title{
+        margin: auto;
+        width: max(17%,257px);
+        text-align: center;
+    }
+    // .Offert-options{
+    //     padding: 0.4rem;
+    //     display: flex;
+    //     width: fit-content;
+    //     margin: auto;
+    //     margin-top: 1rem;
+    //     border-radius: 40px;
+    //     box-shadow: rgba(50, 50, 93, 0.075) 0px 3px 30px 0px,
+    //     rgba(0, 0, 0, 0.1) 0px 2px 4px -2px;
+    //     .Offert-option1{
+    //         background: #4262FF;
+    //         padding:1rem 2.5rem ;
+    //         border-radius: 40px;
+    //         color: #ffffff;
+    //     }
+    //     .Offert-option2{
+    //         padding:1rem 2.5rem ;
+    //         border-radius: 40px;
+    //     }
+    // }
+    .offerts-data{
+        margin: 3rem 0;
+        display: flex;
+        padding:0 5%;
+        justify-content: center;
+        @media (min-width: 2000px) {
+            padding:0 15%;
+        }
+        @media (max-width: 1450px) {
+          padding:0;
+        }
+        @media (max-width: 1100px) {
+            flex-wrap: wrap;
+        }
+        .offert{
+            width: 25%;
+            margin: 0 1%;
+            margin-bottom: 1rem;
+            padding: 2rem 1rem;
+            border-radius: 25px;
+            box-shadow: rgba(50, 50, 93, 0.075) 0px 3px 30px 0px,
+            rgba(0, 0, 0, 0.1) 0px 2px 4px -2px;
+            @media (max-width: 1100px) {
+                width: max(40%,280px);
+            } 
+            @media (max-width: 600px) {
+                width:max(80%,275px);
+            }  
+            .offert-plan-member{
+                display: flex;
+                justify-content: space-between;
+                .offert-member{
+                    display: flex;
+                    *{
+                        margin: 0 2px;
+                    }
+                }
+            }
+            .offert-price{
+                margin: 1rem 0;
+            }
+            .offert-link{
+                border-radius: 40px;
+                width: 100%;
+                padding: 0.5rem 0 ;
+                text-align: center;
+                margin: 1rem 0;
+                color: #4262FF;
+                border: 1px solid #CFCFCF;
+                &:hover{
+                    background: #4262FF;
+                    color: #ffffff;
+                    transition: ease-in-out 0.3s;
+                }
+            }
+            .offert-description2{
+                margin: 0 1.5rem;
+                text-align: center;
+            }
+            .offert-features{
+                margin: 1rem 0;
+            }
+            .offert-options{
+                display: flex;
+                margin: 1rem 0 ;
+                align-items: center;
+                .offert-option{
+                    margin-left: 0.4rem;
+                }
+                *{
+                    fill:#000;
+                }
+                &:hover{
+                    *{
+                        fill: #4262FF;
+                    }
+                    
+                }
+            }    
+        }
+    }
+    .offert-viewPlans{
+         .offert-viewPlans-link{
+             color: #000;
+             align-items:center;
+             display: flex;
+             text-align: center;
+             width: fit-content;
+             margin: auto;
+         }
+        .offert-viewPlans-arrow{
+            fill: #4262FF;
+            margin: auto 1rem;
+        }
+    }
+}

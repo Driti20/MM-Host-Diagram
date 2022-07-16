@@ -1,0 +1,63 @@
+.carousel {
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  .carousel-inner {
+    white-space: nowrap;
+    transition: ease 1s;
+    .carousel-item {
+      width: 100%;
+      .card-container {
+        display: inline-block;
+        width: 20%;
+        height: 13em;
+        margin: 1em 0;
+        @media (max-width: 1068px) {
+          width: 30%;
+        }
+        @media (max-width: 690px) {
+          width: 40%;
+        }
+        @media (max-width: 520px) {
+          width: 50%;
+        }
+        @media (max-width: 460px) {
+          width: 60%;
+        }
+        @media (max-width: 350px) {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+.carusel-control {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  border: none;
+  background-color: none;
+  top: calc(50% - 10px);
+  margin: 0 200px;
+  @media (max-width: 1750px) {
+    margin: 0 100px;
+  }
+  @media (max-width: 1530px) {
+    margin: 0;
+  }
+  @media (max-width: 750px) {
+    transform: scale(0.6);
+    margin: 0 -10px;
+  }
+}
+.leftt {
+  left: 1em;
+  background: url(../../../../../assets/shared/cards/arrow-ios-forward-fill.svg);
+  background-repeat: no-repeat;
+}
+.rightt {
+  right: -1em;
+  background: url(../../../../../assets/shared/cards/arrow-ios-forward.svg);
+  background-repeat: no-repeat;
+}

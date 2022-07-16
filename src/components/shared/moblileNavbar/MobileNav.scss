@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,900&display=swap");
+
+.navbar .mobile-nav{
+    position: relative;
+}
+.navbar .mobile-sidebar{
+    background-color: white;
+    position: fixed;
+    top:0;
+    left:0;
+    width:300px;
+    max-width:77.5%;
+    z-index:2200;
+    overflow-y: auto;
+    box-shadow: 1px 0px 5px rgba(0,0,0,0.5);
+
+    -webkit-animation-name: mobile-nav-scroll;
+    animation-name: mobile-nav-scroll;
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    min-height: 100vh;
+    height: 100%;
+    h6{
+        color:#222;
+        font-size: 22.5px;
+        font-family: "Nunito";
+        font-weight: 400;
+        margin-left: 7.5px;
+    }
+}
+.mobile-sidebar .sidebar-logo-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    border-bottom: 1px solid #aaa;
+    padding:0 15px;
+    a{
+        display: flex;
+        align-items: center;
+    }
+    .mobile-logo-container{
+        content: url('../../../assets/shared/nav/blueLogo.svg');
+        height:25px;
+    }
+    button{
+        border: 0;
+        background: none;
+        font-size: 35px;
+        margin-bottom: -7.5px;
+        color:#222;
+        cursor: pointer;
+        font-family: "Nunito";
+    }
+}
+.mobile-sidebar::-webkit-scrollbar {
+    width: 7.5px;
+}
+.mobile-sidebar::-webkit-scrollbar-track {
+    background: #e2e2e2;
+    border-radius: 1px;
+}
+.mobile-sidebar::-webkit-scrollbar-thumb {
+    background-color:  #474c55;
+    border-radius: 1px;
+}
+@-webkit-keyframes mobile-nav-scroll {
+   0% {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
+@keyframes mobile-nav-scroll {
+    0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
+//Sidebar links------------------------------------------------
+.mobile-sidebar .mobile-sidebar-links{
+    .nav-sidebar-link{
+        display: flex;
+        justify-content: space-between;
+        padding:16px 20px 15px;
+        border-bottom: 1px solid #aaa;
+        border-left: 4px solid transparent;
+        a{
+            font-size: 16.5px;
+            font-family: "Nunito";
+            width:160px;
+            display: flex;
+            align-items: center;
+            color:#444;
+            svg{
+                font-size: 20px;
+                margin-right: 10px;
+                color:#4262ff;
+            }
+        }
+        &:hover{
+            border-left: 4px solid #4262ff;
+        }
+    }
+    .dropdown-arrow{
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 22.5px;
+        margin-bottom: -3px;
+        color:#777;
+        cursor: pointer;
+    }
+}
+.mobile-nav .inner-links{
+    margin:0;
+    h6{
+        padding:20px 10px 10px 55px; 
+        font-size: 16px;
+        font-family: "Nunito";
+        color:#4262ff;
+    }
+    a{
+        padding:10px 10px 10px 55px;
+        border-bottom: 1px solid #aaa;
+        color:#555;
+        font-size: 15px;
+        font-family: "Nunito";
+        width: 100%;
+        display: flex;
+        align-items: center;
+        &:hover{
+            color:#4262ff;
+        }
+    }
+}
+.mobile-sidebar .sidebar-auth{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:15px 0;
+    a{
+        font-size: 16.5px;
+        font-family: "Nunito";
+        padding:10px 20px;
+        border-radius: 5px;
+        background-color: #4262ff;
+        margin:7.5px;
+        color:white !important;
+        display: flex;
+        justify-content: center;
+        &:hover {
+            animation: pulse-white 0.8s ease-in-out;
+            -webkit-animation: pulse-white 0.8s ease-in-out;
+          }
+    }
+}

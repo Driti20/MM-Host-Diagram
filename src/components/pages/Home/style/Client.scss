@@ -1,0 +1,53 @@
+.Client {
+  margin: 4rem 0;
+  .Client-title {
+    margin: auto;
+    width: max(17%, 257px);
+    text-align: center;
+  }
+  .Client-feedbacks {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin:1rem auto;
+    .Client-feedback {
+      .Client-image-name {
+        display: flex;
+        .Client-image {
+          margin-left: -1rem;
+          margin-top: -1rem;
+        }
+        .Client-name{
+            margin-top: 4rem;
+        }
+        .Client-feedback-line{
+            position: absolute;
+            top: -2rem;
+            left: -1rem;
+        }
+        .Client-feedback-icon{
+            position: absolute;
+            width: 3rem;
+            height: 3rem;
+            background: #4262FF;
+            border-radius: 100%;
+            padding:1rem 0.8rem;
+            right: -1rem;
+            top: -1rem;
+        }
+      }
+      .Client-feedback-text{
+        margin: 2rem 1.5rem;
+      }
+      .Client-feedback-logo{
+          display: flex;
+          justify-content: end;
+          align-items: center;
+          margin: 1rem;
+          *{
+              margin-left: 0.5rem;
+          }
+      }
+    }
+  }
+}

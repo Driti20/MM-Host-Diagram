@@ -1,0 +1,131 @@
+.carousel2 {
+  position: relative;
+  margin: auto   20%;
+  overflow: hidden;
+  @media (max-width: 2200px) {
+    margin: 0 15%;
+  }
+  @media (max-width: 1850px) {
+    margin: 0 10%;
+  }
+  .carousel-inner2 {
+    transition: ease 1s;
+    white-space: nowrap;
+    margin:0;
+    .carousel-item2 {
+      width: 100%;
+      .Client-feedback {
+        white-space: pre-wrap;
+      position: relative;
+      width: min(25%,390px);
+      margin: 2rem 4%;
+      margin-right: max(4%,60px);
+      border-radius: 25px;
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(0px) translateZ(0);
+      transform: perspective(0px) translateZ(0);
+      box-shadow: rgba(50, 50, 93, 0.075) 0px 3px 30px 0px,
+            rgba(0, 0, 0, 0.1) 0px 2px 4px -2px;
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 5%;
+        right: 100%;
+        bottom: 0;
+        background: #4262FF;
+        height: 4px;
+        -webkit-transition-property: right;
+        transition-property: right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+      }
+      &:hover:before, &:focus:before, &:active:before {
+        right: 5%;
+      }
+        @media (max-width: 1700px) {
+          width: 30%;
+        }
+        @media (max-width: 1350px) {
+          width: 40%;
+        }
+        @media (max-width: 1010px) {
+          width: 50%;
+        }
+        @media (max-width: 815px) {
+          width: 60%;
+        }
+        @media (max-width: 690px) {
+          width: 80%;
+        }
+        @media (max-width: 520px) {
+          width: 90%;
+        }
+        @media (max-width: 480px) {
+          transform: scale(0.8);
+          width: 100%;
+
+        }
+      }
+    }
+  }
+}
+.carusel-control2 {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  bottom: calc(50% - 10px);
+  cursor: pointer;
+  border: none;
+  margin: 0 10%;
+  @media (max-width: 2200px) {
+    margin: 0 4%;
+  }
+  @media (max-width: 1100px) {
+    margin: 0 2%;
+  }
+  @media (max-width: 1100px) {
+    margin: 0;
+    transform: scale(0.8);
+  }
+  @media (max-width: 450px) {
+    margin: -3%;
+    transform: scale(0.5);
+  }
+}
+.leftt2 {
+  left: 0;
+  background: url(../../../../../assets/shared/Client/leftArrow.svg);
+  background-repeat: no-repeat;
+  @media (max-width: 1100px) {
+    left: 0.5rem;
+  }
+}
+.rightt2 {
+  right: 0;
+  background: url(../../../../../assets/shared/Client/rightArrow.svg);
+  background-repeat: no-repeat;
+}
+.carousel-indicators {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: -2em;
+  z-index: 2;
+  .carousel-indicator-item {
+    width: 2rem;
+    height:0.5rem;
+    border: none;
+    background: #EBEBEB;
+    margin: 0.2em;
+    border-radius:20px;
+    cursor: pointer;
+  }
+  .active {
+    width: 3rem;
+    background: #4262FF;
+  }
+}

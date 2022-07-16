@@ -1,0 +1,313 @@
+.home-page .Banner3 {
+  margin: 100px min(200px, 15%);
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 1250px) {
+    transform: scale(0.9);
+    margin:1%;
+  }
+  @media (max-width: 1050px) {
+    transform: scale(0.7);
+    margin: 0 -15%;
+  }
+  @media (max-width: 850px) {
+    transform: scale(0.6);
+    
+  }
+  @media (max-width: 740px) {
+    display: block;
+    transform: scale(1);
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+
+  }
+  @media (max-width: 600px) {
+    margin: -40%  auto
+  }
+  @media (max-width: 500px) {
+    margin:-25rem 0;
+    transform: scale(0.8);
+    
+  }
+  @media (max-width: 450px) {
+    margin:-15rem 0;
+    margin-left: -2rem;
+    
+  }
+  @media (max-width: 400px) {
+    margin-left: -12%;
+    margin-top:-35em;
+    transform: scale(0.6);
+    
+  }
+  @media (max-width: 350px) {
+    margin-left: -23%;
+    
+    
+  }
+  .Banner3-box1 {
+    width: 30em;
+    height: 25em;
+    position: relative;
+    margin: auto;
+    @media (max-width: 740px) {
+        margin-top: 10em;
+    }
+    @media (max-width: 450px) {
+        margin-top: 0;
+    }
+    .Banner3-box1-img1 {
+      position: absolute;
+      content: url(../../../../assets/shared/Banner3/img1.png);
+      transition: ease-in-out 0.3s;
+        &:hover {
+          transform: scale(1.05);
+          transition: ease-in-out 0.3s;
+        }
+    }
+    .Banner3-box1-arrow1 {
+      position: absolute;
+      content: url(../../../../assets/shared/Banner3/arrow1.svg);
+      left: 15em;
+      top: 7em;
+      transition: ease-in-out 0.3s;
+        &:hover {
+          transform: scale(1.2);
+          transition: ease-in-out 0.3s;
+        }
+    }
+    .Banner3-box1-messageIcon {
+      position: absolute;
+      content: url(../../../../assets/shared/Banner3/messageIcon.svg);
+      left: 80%;
+      top: 10px;
+      transition: ease-in-out 0.3s;
+        &:hover {
+          transform: scale(1.2);
+          transition: ease-in-out 0.3s;
+        }
+    }
+    .Banner3-box1-name1 {
+      width: max-content;
+      position: absolute;
+      background: #ad42ff;
+      padding: 7px 12px;
+      border-radius: 5px;
+      font-size: 20px;
+      color: #ffffff;
+      left: 270px;
+      top: 130px;
+      transition: ease-in-out 0.3s;
+        &:hover {
+          transform: scale(1.05);
+          transition: ease-in-out 0.3s;
+        }
+    }
+    .Banner3-box1-infoBox {
+      position: absolute;
+      width: 170px;
+      height: 183px;
+      box-shadow: rgba(50, 50, 93, 0.075) 0px 3px 30px 0px,
+        rgba(0, 0, 0, 0.1) 0px 2px 4px -2px;
+      top: 200px;
+      left: 100px;
+      border-radius: 23px;
+      transition: ease-in-out 0.3s;
+        &:hover {
+          transform: scale(1.05);
+          transition: ease-in-out 0.3s;
+        }
+
+      .Banner3-box1-icon {
+        position: relative;
+        margin: auto;
+        margin-top: 30px;
+        background: #f6f6f6;
+        width: 66px;
+        height: 66px;
+        justify-self: center;
+        align-self: center;
+        border-radius: 100%;
+        .Banner3-box1-lineArrow {
+          content: url(../../../../assets/shared/Banner3/lineArrow.svg);
+          position: absolute;
+          top: 33px;
+          left: 23px;
+          z-index: 1;
+        }
+        .Banner3-box1-blueArrow {
+          content: url(../../../../assets/shared/Banner3/blueArrow.svg);
+          position: absolute;
+          top: 18px;
+          left: 23px;
+        }
+        .Banner3-box1-pinkArrow {
+          content: url(../../../../assets/shared/Banner3/pinkArrow.svg);
+          position: absolute;
+          top: 32px;
+          left: 22px;
+          z-index: 0;
+        }
+        .Banner3-box1-blackCircle {
+          content: url(../../../../assets/shared/Banner3/blackCircle.svg);
+          position: absolute;
+          top: -7px;
+          left: -5px;
+        }
+        .Banner3-box1-whiteCircle {
+          content: url(../../../../assets/shared/Banner3/whiteCircle.svg);
+          position: absolute;
+          top: -12px;
+          left: -12px;
+        }
+      }
+      .Banner3-box1-info {
+        margin: 20px;
+        text-align: center;
+      }
+    }
+  }
+  .Banner3-box2 {
+    width: 25em;
+    margin-top: 20px;
+    @media (max-width: 740px) {
+        width: 90%;
+        margin: auto;
+    }
+    @media (max-width: 500px) {
+      width: 80%;
+      margin:2% auto;
+  }
+    .Banner3-box2-title {
+      text-align: center;
+      font-size: 35px;
+      margin-bottom: 30px;
+    }
+    .Banner3-box2-description {
+      font-size: 16px;
+      margin: 10px;
+      text-align: center;
+      @media (max-width: 1050px) {
+        font-size: 1.3rem;
+    }
+      @media (max-width: 850px) {
+        font-size: 1.5rem;
+    }
+    @media (max-width: 740px) {
+      font-size: 120%;
+  }
+  @media (max-width: 400px) {
+    font-size: 140%;
+}
+    }
+    .Banner3-box2-button {
+      margin: auto;
+      width: fit-content;
+      padding: 15px 30px;
+      background: #4262ff;
+      color: #ffffff;
+      border-radius: 30px;
+      font-size: 14px;
+      margin-top: 30px;
+      cursor: pointer;
+      @media (max-width: 1050px) {
+        font-size: 1.2rem;
+    }
+      @media (max-width: 850px) {
+        font-size: 1.3rem;
+    }
+    @media (max-width: 740px) {
+      font-size: 120%;
+  }
+  @media (max-width: 400px) {
+    font-size: 140%;
+}
+      &:hover {
+        animation: pulse-white 0.8s ease-in-out;
+        -webkit-animation: pulse-white 0.8s ease-in-out;
+      }
+    }
+    .Banner3-box2-text {
+      font-size: 14px;
+      text-align: center;
+      margin-top: 30px;
+      color: #888888;
+      @media (max-width: 1050px) {
+        font-size: 1.2rem;
+    }
+      @media (max-width: 850px) {
+        font-size: 1.3rem;
+    }
+    @media (max-width: 740px) {
+      font-size: 120%;
+  } 
+  @media (max-width: 400px) {
+    font-size: 140%;
+} 
+    }
+  }
+  .Banner3-box3 {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    margin: auto;
+    @media (max-width: 740px) {
+        margin-top: 100px;
+    }
+    .Banner3-box3-line {
+      position: absolute;
+      content: url(../../../../assets/shared/Banner3/box3-line.svg);
+      transition: ease-in-out 0.3s;
+        &:hover {
+          transform: scale(1.05);
+          transition: ease-in-out 0.3s;
+        }
+    }
+    .Banner3-box3-box {
+      position: absolute;
+      left: 100px;
+      top: 200px;
+      width: 170px;
+      height: 170px;
+      background: #ff94c6;
+      color: #ffffff;
+      text-align: center;
+      padding-top: 45px;
+      box-shadow: rgba(159, 159, 159, 0.47) 0px 10px 15px 0px;
+      transition: ease-in-out 0.3s;
+      &:hover{
+          border-radius: 20px;
+          transition: 0.3s ease-in-out;
+      }
+
+      .Banner3-box3-arrow {
+        content: url(../../../../assets/shared/Banner3/box3-arrow.svg);
+        position: absolute;
+        right: -30px;
+        top: -30px;
+        transition: ease-in-out 0.3s;
+        &:hover {
+          transform: scale(1.2);
+          transition: ease-in-out 0.3s;
+        }
+      }
+      .Banner3-box3-name {
+        width: max-content;
+        position: absolute;
+        background: #ad42ff;
+        padding: 7px 12px;
+        border-radius: 5px;
+        font-size: 20px;
+        color: #ffffff;
+        right: -110px;
+        top: -70px;
+        transition: ease-in-out 0.3s;
+        &:hover {
+          transform: scale(1.05);
+          transition: ease-in-out 0.3s;
+        }
+      }
+    }
+  }
+}

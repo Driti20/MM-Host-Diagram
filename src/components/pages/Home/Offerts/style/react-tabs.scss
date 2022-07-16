@@ -1,0 +1,54 @@
+.react-tabs {
+  -webkit-tap-highlight-color: transparent;
+
+  &__tab-list {
+    padding: 0.4rem;
+  display: flex;
+  width: fit-content;
+  margin: auto;
+  margin-top: 1rem;
+  border-radius: 40px;
+  box-shadow: rgba(50, 50, 93, 0.075) 0px 3px 30px 0px,
+  rgba(0, 0, 0, 0.1) 0px 2px 4px -2px;
+  }
+
+  &__tab {
+    display: inline-block;
+    bottom: -1px;
+    position: relative;
+    list-style: none;
+    padding:1rem 2.5rem ;
+    border-radius: 40px;
+    cursor: pointer;
+
+    &--selected {
+      background: #4262FF;
+      color: #fff;
+    }
+
+    &--disabled {
+    }
+
+    &:focus {
+      outline: none;
+
+      &:after {
+        content: "";
+        position: absolute;
+        height: 5px;
+        left: -4px;
+        right: -4px;
+        bottom: -5px;
+        background: #fff;
+      }
+    }
+  }
+
+  &__tab-panel {
+    display: none;
+
+    &--selected {
+      display: block;
+    }
+  }
+}

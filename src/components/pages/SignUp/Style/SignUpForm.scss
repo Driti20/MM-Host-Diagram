@@ -1,0 +1,189 @@
+.SignUp{
+    padding: 10rem 0;
+    display: flex;
+    overflow: hidden;
+    .SignUp-icons{
+        width: 50%;
+        
+        .SignUp-icons1{
+            position: relative;
+            left: -5rem;
+            height: fit-content;
+            .SignUp-image1{
+                position: relative;
+                content: url(../../../../assets/shared/SignUp/image1.png);
+                width:20rem;
+                transition: ease-in-out 0.3s;
+                &:hover{
+                    transform: scale(1.1);
+                    transition: ease-in-out 0.3s;
+                }
+            }
+            .SignUp-circle1{
+                top: -2rem;
+                left: 1rem;
+                position: absolute;
+                width:20rem;
+                height: 20rem;
+                background-color: #4262ff80;
+                border-radius: 100%;
+                z-index: -1;
+                
+            }
+            .SignUp-circle2{
+                top:1rem;
+                left: 2rem;
+                position: absolute;
+                width: 21rem;
+                height: 21rem;
+                background-color: #4262ff80;
+                border-radius: 100%;
+                z-index: -1;
+                
+            }
+            .SignUp-image3{
+                position: absolute;
+                content: url(../../../../assets/shared/SignUp/image3.png);
+                width: 10rem;
+                bottom: -5rem;
+                left: 10rem;
+                transition: ease-in-out 0.3s;
+                &:hover{
+                    transform: scale(1.1);
+                    transition: ease-in-out 0.3s;
+                }
+            }
+            .SignUp-circle3{
+                top:1rem;
+                left: clamp(20rem,45vw,50rem);
+                position: absolute;
+                width: 5rem;
+                height: 5rem;
+                background-color: #4262ff80;
+                border-radius: 100%;
+                
+            }
+            .SignUp-circle4{
+                top:3rem;
+                left: clamp(19rem,44vw,49rem);
+                position: absolute;
+                width:3rem;
+                height: 3rem;
+                background-color: #4262ff99;
+                border-radius: 100%;
+                
+            }
+            .SignUp-circle5{
+                top:10rem;
+                left: clamp(19rem,44vw,49rem);
+                position: absolute;
+                width:0.5rem;
+                height: 0.5rem;
+                background-color: #4262ff;
+                border-radius: 100%;
+                
+            }
+            .SignUp-circle6{
+                top:17rem;
+                left: clamp(14rem,30vw,44rem);
+                position: absolute;
+                width:1rem;
+                height: 1rem;
+                background-color: #4262ff80;
+                border-radius: 100%;
+                
+            }
+            .SignUp-circle7{
+                top:20rem;
+                left: clamp(16rem,33vw,46rem);
+                position: absolute;
+                width:1rem;
+                height: 1rem;
+                background-color: #4262ff99;
+                border-radius: 100%;
+                
+            }
+            .SignUp-circle8{
+                top:23rem;
+                left: clamp(14rem,30vw,44rem);
+                position: absolute;
+                width:3rem;
+                height: 3rem;
+                background-color: #4262ff99;
+                border-radius: 100%;
+                
+            }
+            .SignUp-circle10{
+                top:38rem;
+                left: 1rem;
+                position: absolute;
+                width:10rem;
+                height: 10rem;
+                background-color: #4262ff80;
+                border-radius: 100%;
+                z-index: -1;
+            }
+            .SignUp-circle11{
+                top:35rem;
+                left: 0rem;
+                position: absolute;
+                width:14rem;
+                height: 14rem;
+                background-color: #4262ff80;
+                border-radius: 100%;
+                z-index: -1;
+            }
+            .SignUp-circle12{
+                top:37rem;
+                left: 12rem;
+                position: absolute;
+                width:3rem;
+                height:3rem;
+                background-color: #4262ff;
+                border-radius: 100%;
+                z-index: -1;
+            }
+            .SignUp-circle13{
+                top:34rem;
+                left: 12rem;
+                position: absolute;
+                width:1rem;
+                height:1rem;
+                background-color: #4262ff;
+                border-radius: 100%;
+                z-index: -1;
+            }
+        }
+        .SignUp-icons2{
+            margin-top: 10rem;
+            position: relative;
+            left: clamp(14rem,30vw,44rem);
+            height: fit-content;
+            .SignUp-image2{
+                position: relative;
+                content: url(../../../../assets/shared/SignUp/image2.png);
+                width:6rem;
+            }
+            .SignUp-circle9{
+                position: absolute;
+                width:7rem;
+                height: 7rem;
+                background-color: #4262ff;
+                border-radius: 100%;
+                z-index: -1;
+                top: -0.5rem;
+                left: -0.5rem;
+            }
+            .SignUp-circle8{
+                top:23rem;
+                left: clamp(14rem,30vw,44rem);
+                position: absolute;
+                width:3rem;
+                height: 3rem;
+                background-color: #4262ff99;
+                border-radius: 100%;
+                
+            }
+        }
+    }
+}
